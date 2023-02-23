@@ -35,8 +35,8 @@ class planCard extends HTMLElement {
         const template = document.createElement("template");
         template.innerHTML = `
         <li class="plan-card">
-            <span class="month"><p>1 mes gratis</p></span>
             <div class="plan-info">
+                <span class="month"><p>1 mes gratis</p></span>
                 <h2>${this.title}</h2>
                 <p>${this.price} €/mes tras el periodo de la oferta</p>
                 <p>${this.account}</p>
@@ -63,32 +63,46 @@ class planCard extends HTMLElement {
             list-style: none;
             text-decoration: none;
         }
+
         .plan-card{
             width: 270px;
-            height: 600px;
+            height: 580px;
             padding: 15px;
+            margin-bottom: 50px;
             background-color: white;
             display: flex;
             flex-direction: column;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
+
         .month{
-            width: 110px;
+            width: 100px;
             display: flex;
-            padding: 5px;
+            padding: 4px;
             border-radius: 5px;
             justify-content: center;
-            background-color: #0D72EA; 
+            background-color: #0D72EA;
+            margin-bottom: 10px; 
         }
         .month p{
             color: white;
-            font-size: 16px;
+            font-size: 13px;
             font-weight: 700;
-            margin: 0;
         }
+
+        .plan-info{
+            border-bottom: 1px solid black;
+            padding-bottom: 20px;
+        }
+        .plan-info p{
+            font-size: 14px;
+        }
+
         .benefits{
-            list-style: none;
+            height: 170px;
+            margin: 20px 0px 20px 0px;
+            font-size: 14px;
         }
 
         .btn{
@@ -103,16 +117,18 @@ class planCard extends HTMLElement {
             position: relative;
             display: inline-block;
             letter-spacing: 0.05rem;
-            font-weight: 700;
-            font-size: 17px;
+            font-weight: 400;
+            font-size: 16px;
             border-radius: 500px;
             overflow: hidden;
             background: black;
-            color: ghostwhite;
+            color: white;
+            margin-bottom: 15px;
         }
 
         .terms{
-            font-size: 12px;
+            font-size: 10px;
+            color: rgb(109, 108, 108);
         }
         
         @media (max-width: 1080px) {
