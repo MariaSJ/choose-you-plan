@@ -109,7 +109,7 @@ class planCard extends HTMLElement {
             outline: none;
             cursor: pointer;
             border: none;
-            padding: 0.9rem 2rem;
+            padding: 0.8rem 1rem;
             margin: 0;
             font-family: inherit;
             font-size: inherit;
@@ -118,7 +118,7 @@ class planCard extends HTMLElement {
             display: inline-block;
             letter-spacing: 0.05rem;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 15px;
             border-radius: 500px;
             overflow: hidden;
             background: black;
