@@ -1,4 +1,3 @@
-
 class planCard extends HTMLElement {
     constructor() {
         super();
@@ -6,7 +5,7 @@ class planCard extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ["title","price", "account", "benefits", "terms"];
+        return [ "title", "price", "account", "benefits", "terms" ];
     }
 
     attributeChangedCallback(attr, oldVal, newVal) {
