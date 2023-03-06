@@ -1,6 +1,10 @@
 'use strict';
 
-// import "./components/plan-card.js";
+// import './components/plan-card.js';
+
+// import * as data from './data/plans.json';
+//     const title = data[0].title;
+//     console.log(title);
 
 // fetch('./data/plans.json')
 //   .then(response => response.json())
@@ -23,5 +27,3 @@
 //   }
 // };
 // request.send(null);
-
-
